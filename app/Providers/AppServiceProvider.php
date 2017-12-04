@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        \Carbon\Carbon::setLocale('zh');
+        //
     }
 
     /**
@@ -25,4 +25,8 @@ class AppServiceProvider extends ServiceProvider
     {
         //
     }
+    protected $policies = [
+        'App\Model' => 'App\Policies\ModelPolicy',
+        \App\Models\User::class  => \App\Policies\UserPolicy::class,
+    ];
 }
