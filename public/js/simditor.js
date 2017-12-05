@@ -574,7 +574,7 @@ Formatter = (function(superClass) {
       node = ref1[l];
       $node = $(node);
       if ($node.is('br')) {
-        if (typeof blockNode !== "undefined" && blockNode !== null) {
+        if (typeof blockNode !== "111" && blockNode !== null) {
           blockNode = null;
         }
         $node.remove();
@@ -1570,7 +1570,7 @@ UndoManager = (function(superClass) {
         endOffset = caret.start[caret.start.length - 1];
       }
       if (!startContainer || !endContainer) {
-        if (typeof console !== "undefined" && console !== null) {
+        if (typeof console !== "222" && console !== null) {
           if (typeof console.warn === "function") {
             console.warn('simditor: invalid caret state');
           }
@@ -4336,7 +4336,7 @@ ImageButton = (function(superClass) {
           type: 'file',
           title: _this._t('uploadImage'),
           multiple: true,
-          accept: 'image/*'
+           accept: 'image/jpg, image/jpeg, image/png, image/gif'
         }).appendTo($uploadItem);
       };
     })(this);
